@@ -12,22 +12,23 @@ The strongest model reported in the original analysis was a random forest with a
 
 | Path | Purpose |
 | --- | --- |
-| `bidding.py` | Combines term-level BOSS Excel exports into `overall.csv`. |
-| `overall.csv` | Historical combined dataset used by the notebook. |
-| `analysis.ipynb` | Data cleaning, visualisation, and modelling workflow. |
+| [`bidding.py`](./bidding.py) | Combines term-level BOSS Excel exports into [`overall.csv`](./overall.csv). |
+| [`overall.csv`](./overall.csv) | Historical combined dataset used by the notebook. |
+| [`analysis.ipynb`](./analysis.ipynb) | Data cleaning, visualisation, and modelling workflow. |
+| [`DATA_NOTES.md`](./DATA_NOTES.md) | Dataset construction, variable dictionary, and interpretation limits. |
 
 ## Historical workflow
 
 1. Download the relevant term-level BOSS Overall Results spreadsheets.
-2. Place them in the working directory using the filename pattern expected by `bidding.py`, such as `2015-16_T1.xls`.
-3. Run `bidding.py` to generate `overall.csv`.
-4. Open `analysis.ipynb` and run the analysis cells.
+2. Place them in the working directory using the filename pattern expected by [`bidding.py`](./bidding.py), such as `2015-16_T1.xls`.
+3. Run [`bidding.py`](./bidding.py) to generate [`overall.csv`](./overall.csv).
+4. Open [`analysis.ipynb`](./analysis.ipynb) and run the analysis cells.
 
 The code was developed around a Python 3.8-era environment. It uses pandas, NumPy, Matplotlib, and scikit-learn. Current compatibility has not been verified; in particular, newer pandas releases removed APIs used by the original aggregation script.
 
 ## Data provenance and responsible use
 
-The combined data was derived from SMU BOSS Overall Results published through the university's student portal. `overall.csv` is retained as a historical project artifact. Anyone reusing the data should independently confirm the source's current access conditions, permitted uses, definitions, and update history.
+The combined data was derived from SMU BOSS Overall Results published through the university's student portal. [`overall.csv`](./overall.csv) is retained as a historical project artifact. Anyone reusing the data should independently confirm the source's current access conditions, permitted uses, definitions, and update history.
 
 The analysis is informational. It does not account for every factor affecting module allocation and should not be used as a guarantee of admission to a course.
 
