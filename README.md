@@ -8,6 +8,12 @@ This project explores historical SMU BOSS bidding results using descriptive stat
 
 The strongest model reported in the original analysis was a random forest with an approximate out-of-sample R² of 0.65. That result is descriptive of the historical dataset and does not guarantee future bidding outcomes.
 
+## Example result
+
+![Historical bids plotted against the pre-processing vacancy feature](./assets/project-preview.png)
+
+An exploratory view from the original notebook comparing historical bids with the `before_process_vacancy` feature.
+
 ## Repository contents
 
 | Path | Purpose |
